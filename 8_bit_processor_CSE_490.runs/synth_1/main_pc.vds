@@ -1,0 +1,377 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Apr  6 15:19:26 2022
+# Process ID: 18251
+# Current directory: /home/csdue/kexinche/CSE_490/8_bit_processor_CSE_490/8_bit_processor_CSE_490.runs/synth_1
+# Command line: vivado -log main_pc.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source main_pc.tcl
+# Log file: /home/csdue/kexinche/CSE_490/8_bit_processor_CSE_490/8_bit_processor_CSE_490.runs/synth_1/main_pc.vds
+# Journal file: /home/csdue/kexinche/CSE_490/8_bit_processor_CSE_490/8_bit_processor_CSE_490.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source main_pc.tcl -notrace
+Command: synth_design -top main_pc -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 18972 
+WARNING: [Synth 8-2490] overwriting previous definition of module register_file [/home/csdue/kexinche/CSE_490/8_bit_processor_CSE_490/8_bit_processor_CSE_490.srcs/sources_1/new/register_file.v:3]
+WARNING: [Synth 8-2490] overwriting previous definition of module alu [/home/csdue/kexinche/CSE_490/8_bit_processor_CSE_490/8_bit_processor_CSE_490.srcs/sources_1/new/alu.v:1]
+WARNING: [Synth 8-2490] overwriting previous definition of module pc_adder [/home/csdue/kexinche/CSE_490/8_bit_processor_CSE_490/8_bit_processor_CSE_490.srcs/sources_1/new/pc_adder.v:3]
+WARNING: [Synth 8-2490] overwriting previous definition of module data_memory [/home/csdue/kexinche/CSE_490/8_bit_processor_CSE_490/8_bit_processor_CSE_490.srcs/sources_1/new/data_memory.v:3]
+WARNING: [Synth 8-2490] overwriting previous definition of module program_counter [/home/csdue/kexinche/CSE_490/8_bit_processor_CSE_490/8_bit_processor_CSE_490.srcs/sources_1/new/program_counter.v:3]
+WARNING: [Synth 8-2490] overwriting previous definition of module instruction_memory [/home/csdue/kexinche/CSE_490/8_bit_processor_CSE_490/8_bit_processor_CSE_490.srcs/sources_1/new/instruction_memory.v:4]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:19 . Memory (MB): peak = 2237.406 ; gain = 203.785 ; free physical = 3209 ; free virtual = 34665
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'main_pc' [/home/csdue/kexinche/CSE_490/8_bit_processor_CSE_490/8_bit_processor_CSE_490.srcs/sources_1/new/main.v:3]
+INFO: [Synth 8-6157] synthesizing module 'instruction_memory' [/home/csdue/kexinche/CSE_490/8_bit_processor_CSE_490/8_bit_processor_CSE_490.srcs/sources_1/new/instruction_memory.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'instruction_memory' (1#1) [/home/csdue/kexinche/CSE_490/8_bit_processor_CSE_490/8_bit_processor_CSE_490.srcs/sources_1/new/instruction_memory.v:4]
+INFO: [Synth 8-6157] synthesizing module 'control' [/home/csdue/kexinche/CSE_490/8_bit_processor_CSE_490/8_bit_processor_CSE_490.srcs/sources_1/new/control.v:4]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/csdue/kexinche/CSE_490/8_bit_processor_CSE_490/8_bit_processor_CSE_490.srcs/sources_1/new/control.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'control' (2#1) [/home/csdue/kexinche/CSE_490/8_bit_processor_CSE_490/8_bit_processor_CSE_490.srcs/sources_1/new/control.v:4]
+INFO: [Synth 8-6157] synthesizing module 'register_file' [/home/csdue/kexinche/CSE_490/8_bit_processor_CSE_490/8_bit_processor_CSE_490.srcs/sources_1/new/register_file.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'register_file' (3#1) [/home/csdue/kexinche/CSE_490/8_bit_processor_CSE_490/8_bit_processor_CSE_490.srcs/sources_1/new/register_file.v:3]
+INFO: [Synth 8-6157] synthesizing module 'sign_ext' [/home/csdue/kexinche/CSE_490/8_bit_processor_CSE_490/8_bit_processor_CSE_490.srcs/sources_1/new/sign_ext.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'sign_ext' (4#1) [/home/csdue/kexinche/CSE_490/8_bit_processor_CSE_490/8_bit_processor_CSE_490.srcs/sources_1/new/sign_ext.v:3]
+INFO: [Synth 8-6157] synthesizing module 'multiplexers' [/home/csdue/kexinche/CSE_490/8_bit_processor_CSE_490/8_bit_processor_CSE_490.srcs/sources_1/new/multiplexers.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'multiplexers' (5#1) [/home/csdue/kexinche/CSE_490/8_bit_processor_CSE_490/8_bit_processor_CSE_490.srcs/sources_1/new/multiplexers.v:3]
+INFO: [Synth 8-6157] synthesizing module 'alu' [/home/csdue/kexinche/CSE_490/8_bit_processor_CSE_490/8_bit_processor_CSE_490.srcs/sources_1/new/alu.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/csdue/kexinche/CSE_490/8_bit_processor_CSE_490/8_bit_processor_CSE_490.srcs/sources_1/new/alu.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (6#1) [/home/csdue/kexinche/CSE_490/8_bit_processor_CSE_490/8_bit_processor_CSE_490.srcs/sources_1/new/alu.v:1]
+INFO: [Synth 8-6157] synthesizing module 'data_memory' [/home/csdue/kexinche/CSE_490/8_bit_processor_CSE_490/8_bit_processor_CSE_490.srcs/sources_1/new/data_memory.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'data_memory' (7#1) [/home/csdue/kexinche/CSE_490/8_bit_processor_CSE_490/8_bit_processor_CSE_490.srcs/sources_1/new/data_memory.v:3]
+INFO: [Synth 8-6157] synthesizing module 'pc_adder' [/home/csdue/kexinche/CSE_490/8_bit_processor_CSE_490/8_bit_processor_CSE_490.srcs/sources_1/new/pc_adder.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'pc_adder' (8#1) [/home/csdue/kexinche/CSE_490/8_bit_processor_CSE_490/8_bit_processor_CSE_490.srcs/sources_1/new/pc_adder.v:3]
+INFO: [Synth 8-6157] synthesizing module 'program_counter' [/home/csdue/kexinche/CSE_490/8_bit_processor_CSE_490/8_bit_processor_CSE_490.srcs/sources_1/new/program_counter.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'program_counter' (9#1) [/home/csdue/kexinche/CSE_490/8_bit_processor_CSE_490/8_bit_processor_CSE_490.srcs/sources_1/new/program_counter.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'main_pc' (10#1) [/home/csdue/kexinche/CSE_490/8_bit_processor_CSE_490/8_bit_processor_CSE_490.srcs/sources_1/new/main.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:23 . Memory (MB): peak = 2274.293 ; gain = 240.672 ; free physical = 3228 ; free virtual = 34685
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:25 . Memory (MB): peak = 2289.129 ; gain = 255.508 ; free physical = 3190 ; free virtual = 34647
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:25 . Memory (MB): peak = 2289.129 ; gain = 255.508 ; free physical = 3190 ; free virtual = 34647
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2289.129 ; gain = 0.000 ; free physical = 3181 ; free virtual = 34638
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/csdue/kexinche/CSE_490/8_bit_processor_CSE_490/8_bit_processor_CSE_490.srcs/constrs_1/new/cse490proj1.xdc]
+WARNING: [Vivado 12-507] No nets matched 'clk_IBUF'. [/home/csdue/kexinche/CSE_490/8_bit_processor_CSE_490/8_bit_processor_CSE_490.srcs/constrs_1/new/cse490proj1.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/csdue/kexinche/CSE_490/8_bit_processor_CSE_490/8_bit_processor_CSE_490.srcs/constrs_1/new/cse490proj1.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/csdue/kexinche/CSE_490/8_bit_processor_CSE_490/8_bit_processor_CSE_490.srcs/constrs_1/new/cse490proj1.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/csdue/kexinche/CSE_490/8_bit_processor_CSE_490/8_bit_processor_CSE_490.srcs/constrs_1/new/cse490proj1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/main_pc_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/main_pc_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2776.922 ; gain = 0.000 ; free physical = 3021 ; free virtual = 34478
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2776.922 ; gain = 0.000 ; free physical = 3023 ; free virtual = 34480
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:50 . Memory (MB): peak = 2776.922 ; gain = 743.301 ; free physical = 3287 ; free virtual = 34744
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:50 . Memory (MB): peak = 2776.922 ; gain = 743.301 ; free physical = 3287 ; free virtual = 34744
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:50 . Memory (MB): peak = 2776.922 ; gain = 743.301 ; free physical = 3286 ; free virtual = 34744
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "instruction_memory" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/csdue/kexinche/CSE_490/8_bit_processor_CSE_490/8_bit_processor_CSE_490.srcs/sources_1/new/alu.v:9]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUOP_reg' [/home/csdue/kexinche/CSE_490/8_bit_processor_CSE_490/8_bit_processor_CSE_490.srcs/sources_1/new/control.v:14]
+WARNING: [Synth 8-327] inferring latch for variable 'jump_reg' [/home/csdue/kexinche/CSE_490/8_bit_processor_CSE_490/8_bit_processor_CSE_490.srcs/sources_1/new/control.v:14]
+WARNING: [Synth 8-327] inferring latch for variable 'memread_reg' [/home/csdue/kexinche/CSE_490/8_bit_processor_CSE_490/8_bit_processor_CSE_490.srcs/sources_1/new/control.v:14]
+WARNING: [Synth 8-327] inferring latch for variable 'memwrite_reg' [/home/csdue/kexinche/CSE_490/8_bit_processor_CSE_490/8_bit_processor_CSE_490.srcs/sources_1/new/control.v:14]
+WARNING: [Synth 8-327] inferring latch for variable 'alusrc_reg' [/home/csdue/kexinche/CSE_490/8_bit_processor_CSE_490/8_bit_processor_CSE_490.srcs/sources_1/new/control.v:14]
+WARNING: [Synth 8-327] inferring latch for variable 'regwrite_reg' [/home/csdue/kexinche/CSE_490/8_bit_processor_CSE_490/8_bit_processor_CSE_490.srcs/sources_1/new/control.v:14]
+WARNING: [Synth 8-327] inferring latch for variable 'o_reg' [/home/csdue/kexinche/CSE_490/8_bit_processor_CSE_490/8_bit_processor_CSE_490.srcs/sources_1/new/alu.v:10]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:51 . Memory (MB): peak = 2776.922 ; gain = 743.301 ; free physical = 3309 ; free virtual = 34767
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 4     
++---RAMs : 
+	               2K Bit         RAMs := 1     
+	               16 Bit         RAMs := 1     
++---Muxes : 
+	  12 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 8     
+	   6 Input      8 Bit        Muxes := 2     
+	   8 Input      1 Bit        Muxes := 6     
+	   6 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module instruction_memory 
+Detailed RTL Component Info : 
++---Muxes : 
+	  12 Input      8 Bit        Muxes := 1     
+Module control 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      1 Bit        Muxes := 6     
+Module register_file 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---RAMs : 
+	               16 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+Module multiplexers 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
++---Muxes : 
+	   6 Input      8 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 1     
+Module data_memory 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---RAMs : 
+	               2K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module pc_adder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+Module program_counter 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3332] Sequential element (ctr/ALUOP_reg[2]) is unused and will be removed from module main_pc.
+WARNING: [Synth 8-3332] Sequential element (ctr/ALUOP_reg[1]) is unused and will be removed from module main_pc.
+WARNING: [Synth 8-3332] Sequential element (ctr/ALUOP_reg[0]) is unused and will be removed from module main_pc.
+WARNING: [Synth 8-3332] Sequential element (ctr/memread_reg) is unused and will be removed from module main_pc.
+WARNING: [Synth 8-3332] Sequential element (ctr/memwrite_reg) is unused and will be removed from module main_pc.
+WARNING: [Synth 8-3332] Sequential element (ctr/alusrc_reg) is unused and will be removed from module main_pc.
+WARNING: [Synth 8-3332] Sequential element (ctr/regwrite_reg) is unused and will be removed from module main_pc.
+WARNING: [Synth 8-3332] Sequential element (reg_to_datamem/o_reg[7]) is unused and will be removed from module main_pc.
+WARNING: [Synth 8-3332] Sequential element (reg_to_datamem/o_reg[6]) is unused and will be removed from module main_pc.
+WARNING: [Synth 8-3332] Sequential element (reg_to_datamem/o_reg[5]) is unused and will be removed from module main_pc.
+WARNING: [Synth 8-3332] Sequential element (reg_to_datamem/o_reg[4]) is unused and will be removed from module main_pc.
+WARNING: [Synth 8-3332] Sequential element (reg_to_datamem/o_reg[3]) is unused and will be removed from module main_pc.
+WARNING: [Synth 8-3332] Sequential element (reg_to_datamem/o_reg[2]) is unused and will be removed from module main_pc.
+WARNING: [Synth 8-3332] Sequential element (reg_to_datamem/o_reg[1]) is unused and will be removed from module main_pc.
+WARNING: [Synth 8-3332] Sequential element (reg_to_datamem/o_reg[0]) is unused and will be removed from module main_pc.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:53 . Memory (MB): peak = 2776.922 ; gain = 743.301 ; free physical = 3267 ; free virtual = 34727
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:01:18 . Memory (MB): peak = 2776.922 ; gain = 743.301 ; free physical = 2868 ; free virtual = 34329
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:01:18 . Memory (MB): peak = 2776.922 ; gain = 743.301 ; free physical = 2867 ; free virtual = 34328
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (ctr/jump_reg) is unused and will be removed from module main_pc.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:01:18 . Memory (MB): peak = 2776.922 ; gain = 743.301 ; free physical = 2865 ; free virtual = 34325
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:42 ; elapsed = 00:01:25 . Memory (MB): peak = 2776.922 ; gain = 743.301 ; free physical = 2740 ; free virtual = 34201
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:42 ; elapsed = 00:01:25 . Memory (MB): peak = 2776.922 ; gain = 743.301 ; free physical = 2740 ; free virtual = 34201
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:42 ; elapsed = 00:01:25 . Memory (MB): peak = 2776.922 ; gain = 743.301 ; free physical = 2740 ; free virtual = 34201
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:42 ; elapsed = 00:01:25 . Memory (MB): peak = 2776.922 ; gain = 743.301 ; free physical = 2740 ; free virtual = 34201
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:01:25 . Memory (MB): peak = 2776.922 ; gain = 743.301 ; free physical = 2740 ; free virtual = 34201
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:42 ; elapsed = 00:01:25 . Memory (MB): peak = 2776.922 ; gain = 743.301 ; free physical = 2740 ; free virtual = 34201
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT1 |     1|
+|3     |LUT2 |     3|
+|4     |LUT3 |     3|
+|5     |LUT4 |     4|
+|6     |FDRE |     4|
+|7     |IBUF |     1|
+|8     |OBUF |     8|
++------+-----+------+
+
+Report Instance Areas: 
++------+----------+----------------+------+
+|      |Instance  |Module          |Cells |
++------+----------+----------------+------+
+|1     |top       |                |    25|
+|2     |  prg_cnt |program_counter |    15|
++------+----------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:42 ; elapsed = 00:01:25 . Memory (MB): peak = 2776.922 ; gain = 743.301 ; free physical = 2740 ; free virtual = 34201
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 23 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:39 ; elapsed = 00:01:16 . Memory (MB): peak = 2776.922 ; gain = 255.508 ; free physical = 2788 ; free virtual = 34248
+Synthesis Optimization Complete : Time (s): cpu = 00:00:42 ; elapsed = 00:01:25 . Memory (MB): peak = 2776.922 ; gain = 743.301 ; free physical = 2788 ; free virtual = 34248
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2776.922 ; gain = 0.000 ; free physical = 2838 ; free virtual = 34298
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2779.891 ; gain = 0.000 ; free physical = 2749 ; free virtual = 34210
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+34 Infos, 30 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:55 ; elapsed = 00:01:46 . Memory (MB): peak = 2779.891 ; gain = 905.641 ; free physical = 2880 ; free virtual = 34341
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2779.891 ; gain = 0.000 ; free physical = 2880 ; free virtual = 34341
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/csdue/kexinche/CSE_490/8_bit_processor_CSE_490/8_bit_processor_CSE_490.runs/synth_1/main_pc.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file main_pc_utilization_synth.rpt -pb main_pc_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Apr  6 15:21:37 2022...

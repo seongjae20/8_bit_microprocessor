@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Apr  6 15:25:45 2022
+# Process ID: 25976
+# Current directory: /home/csdue/kexinche/CSE_490/8_bit_processor_CSE_490/8_bit_processor_CSE_490.runs/impl_1
+# Command line: vivado -log main_pc.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source main_pc.tcl -notrace
+# Log file: /home/csdue/kexinche/CSE_490/8_bit_processor_CSE_490/8_bit_processor_CSE_490.runs/impl_1/main_pc.vdi
+# Journal file: /home/csdue/kexinche/CSE_490/8_bit_processor_CSE_490/8_bit_processor_CSE_490.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source main_pc.tcl -notrace
